@@ -1,0 +1,31 @@
+.quality-list {
+  display: flex;
+}
+.quality-list__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.title-style {
+  color: $secondary-color-text;
+}
+.quality-list__title {
+  margin-bottom: 10px;
+
+  color: $secondary-color-text;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.quality-wrapper {
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $button-grey-color;
+}
