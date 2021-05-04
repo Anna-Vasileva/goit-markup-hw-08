@@ -102,12 +102,18 @@ p {
 .navigation__link {
   color: #212121;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.18;
   letter-spacing: 0.02em;
 }
 
 .navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 481px) {
+  .navigation__link {
+    line-height: 1.14;
+  }
 }
 
 .navigation__link--current {
@@ -126,6 +132,10 @@ p {
     height: 4px;
     background-color: #2196f3;
   }
+}
+
+.adds-mob {
+  margin-bottom: 64px;
 }
 
 @media screen and (min-width: 481px) {
@@ -154,12 +164,26 @@ p {
 .adds__link {
   color: inherit;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.02em;
+  font-size: 24px;
 }
 
 .adds__link:hover, .adds__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 481px) {
+  .adds__link {
+    line-height: 1.14;
+    font-size: 14px;
+  }
+}
+
+.adds__link--accent {
+  color: #2196f3;
+  font-size: 34px;
+  line-height: 1.18;
 }
 
 .navigation {
@@ -252,6 +276,31 @@ p {
   .adds-container {
     display: none;
   }
+}
+
+.adds-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 48px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 481px) {
+  .adds-networks {
+    display: none;
+  }
+}
+
+.adds-networks__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.adds-networks__link {
+  color: #2196f3;
 }
 
 .logo__accent {
