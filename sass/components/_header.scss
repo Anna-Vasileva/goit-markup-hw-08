@@ -23,6 +23,12 @@
   &:focus {
     color: $accent-color;
   }
+
+  // @media screen and (min-width: 481px) {
+  //   font-weight: 500;
+  //   line-height: 1.14;
+  //   letter-spacing: 0.02em;
+  // }
 }
 .navigation__link--current {
   position: relative;
@@ -114,7 +120,7 @@
   margin-top: 10px;
   margin-left: auto;
   margin-right: 0;
-  // margin: 10px 0px;
+  z-index: 999;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -153,11 +159,12 @@
 
     padding-left: 40px;
     // padding-top: 48px;
-    top: 100%;
+    top: 16px;
     left: 0;
     width: 100%;
     text-align: left;
     font-size: 40px;
+
     &.is-open {
       display: block;
     }

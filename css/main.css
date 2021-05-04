@@ -193,6 +193,7 @@ p {
   margin-top: 10px;
   margin-left: auto;
   margin-right: 0;
+  z-index: 999;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -232,7 +233,7 @@ p {
     position: absolute;
     background-color: #ffffff;
     padding-left: 40px;
-    top: 100%;
+    top: 16px;
     left: 0;
     width: 100%;
     text-align: left;
