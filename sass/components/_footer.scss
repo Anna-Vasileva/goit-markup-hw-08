@@ -29,10 +29,10 @@
 .basement__logo--color {
   color: $primary-white-color;
 }
-.basement__container {
-  display: flex;
-  align-items: baseline;
-}
+// .basement__container {
+//   // display: flex;
+//   // align-items: baseline;
+// }
 .basement-wrapper {
   &:nth-child(1) {
     margin-right: 70px;
@@ -82,7 +82,7 @@
   }
 }
 .form__label {
-  display: flex;
+  // display: flex;
   margin: 0;
 }
 .form__text {
@@ -92,10 +92,10 @@
   padding: 10px 29px;
   min-width: 200px;
 }
-.button__text {
-  display: flex;
-  align-items: center;
-}
+// .button__text {
+//   // display: flex;
+//   // align-items: center;
+// }
 .button__icon {
   margin-left: 10px;
 }

@@ -1,6 +1,6 @@
-.clients-list {
-  display: flex;
-}
+// .clients-list {
+//   // display: flex;
+// }
 .clients-list__icon {
   fill: $social-networks;
 
@@ -16,9 +16,9 @@
 .clients-list__link {
   width: 170px;
   height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
   border: 1px solid $social-networks;
   border-radius: 4px;
