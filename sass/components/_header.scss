@@ -24,7 +24,7 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     line-height: 1.14;
   }
 }
@@ -32,7 +32,7 @@
   position: relative;
 
   color: $accent-color;
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     &::after {
       position: absolute;
       bottom: 0;
@@ -47,20 +47,28 @@
     }
   }
 }
-.adds {
-  // margin-top: 270px;
-  // display: none;
-  // display: flex;
-}
+// .adds {
+//   // margin-top: 270px;
+//   // display: none;
+//   // display: flex;
+// }
 .adds-mob {
   margin-bottom: 64px;
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 .adds-desktop {
-  @media screen and (max-width: 480px) {
-    display: none;
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
+
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 .page-header__adds {
@@ -68,7 +76,7 @@
 }
 .navigation__item:not(:last-child),
 .adds__item:not(:last-child) {
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     margin-right: 50px;
   }
 }
@@ -89,7 +97,7 @@
   &:focus {
     color: $accent-color;
   }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     line-height: 1.14;
     font-size: 14px;
   }
@@ -142,7 +150,7 @@
   &:focus {
     fill: $accent-color;
   }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -161,14 +169,13 @@
 }
 
 .menu-container {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     display: none;
     position: absolute;
 
     background-color: $primary-white-color;
 
     padding-left: 40px;
-    // padding-top: 48px;
     top: 16px;
     left: 0;
     width: 100%;
@@ -178,21 +185,16 @@
     &.is-open {
       display: block;
     }
-    //   .menu-button.is-open & {
-
-    // }
   }
 }
 .adds-container {
   display: block;
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 .adds-networks {
   display: flex;
-  // margin-left: 40px;
-  // justify-content: center;
   margin-bottom: 48px;
 
   font-weight: 500;
@@ -200,7 +202,7 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
