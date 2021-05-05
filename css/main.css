@@ -57,8 +57,15 @@ p {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* Переход css, блок-утилита*/
@@ -796,12 +803,54 @@ p {
           justify-content: center;
 }
 
-.quality-list__item {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .quality-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .quality-list__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .quality-list__item {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .quality-list__item {
+    max-width: 354px;
+  }
+  .quality-list__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .quality-list__item:not(:nth-last-of-type(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  .quality-list__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .quality-list__item {
+    width: 270px;
+  }
+  .quality-list__item:not(:nth-last-of-type(-n + 2)) {
+    margin-bottom: 0;
+  }
+  .quality-list__item:nth-child(odd) {
+    margin-right: 0;
+  }
+  .quality-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .title-style {
@@ -811,16 +860,48 @@ p {
 .quality-list__title {
   margin-bottom: 10px;
   color: #212121;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .quality-list__title {
+    text-align: left;
+  }
+}
+
 .quality-wrapper {
   height: 120px;
   margin-bottom: 30px;
+  text-align: center;
   background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 768px) {
+  .quality-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.quality-list__icon {
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .quality-list__icon {
+    margin: 0;
+  }
 }
 
 .page-title {
