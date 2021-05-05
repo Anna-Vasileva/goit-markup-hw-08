@@ -1,15 +1,10 @@
 .quality-list {
-  // display: flex;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
 }
 .quality-list__item {
-  // width: 270px;
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
   &:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -63,9 +58,6 @@
   height: 120px;
   margin-bottom: 30px;
   text-align: center;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
 
   background-color: $button-grey-color;
 
