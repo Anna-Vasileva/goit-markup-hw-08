@@ -443,74 +443,78 @@
     <!-- FOOTER -->
     <footer class="basement">
       <div class="container basement__container">
-        <div class="basement-wrapper">
-          <a
-            href="index.html"
-            lang="en"
-            class="logo basement__logo basement__logo--color link"
+        <div class="basement-wrap">
+          <div
+            class="basement-wrapper basement-wrapper--geometry basement-wrap__basement-wrapper"
           >
-            <span class="logo__accent">Web</span>Studio
-          </a>
-          <address class="basement-adds">
-            <p class="basement-adds__value basement__adds-item">
-              г. Киев, пр-т Леси Украинки, 26
-            </p>
             <a
-              href="mailto:info@example.com"
-              class="basement-adds__link link basement__adds-item transition-link"
-              >info@example.com</a
+              href="index.html"
+              lang="en"
+              class="logo basement__logo basement__logo--color link"
             >
-            <a
-              href="tel:+380991111111"
-              class="basement-adds__link link basement__adds-item transition-link"
-              >+38 099 111 11 11</a
-            >
-          </address>
-        </div>
-        <div class="basement-wrapper">
-          <p class="basement-text">присоединяйтесь</p>
-          <ul class="list social-networks">
-            <li class="social-networks__item social-networks__item--margin">
+              <span class="logo__accent">Web</span>Studio
+            </a>
+            <address class="basement-adds">
+              <p class="basement-adds__value basement__adds-item">
+                г. Киев, пр-т Леси Украинки, 26
+              </p>
               <a
-                href="#"
-                class="link social-networks__link basement__social-networks-link"
+                href="mailto:info@example.com"
+                class="basement-adds__link link basement__adds-item transition-link"
+                >info@example.com</a
               >
-                <svg class="social-networks__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks__item social-networks__item--margin">
               <a
-                href="#"
-                class="link social-networks__link basement__social-networks-link"
+                href="tel:+380991111111"
+                class="basement-adds__link link basement__adds-item transition-link"
+                >+38 099 111 11 11</a
               >
-                <svg class="social-networks__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks__item social-networks__item--margin">
-              <a
-                href="#"
-                class="link social-networks__link basement__social-networks-link"
-              >
-                <svg class="social-networks__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks__item social-networks__item--margin">
-              <a
-                href="#"
-                class="link social-networks__link basement__social-networks-link"
-              >
-                <svg class="social-networks__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+            </address>
+          </div>
+          <div class="basement-wrapper basement-wrap__basement-wrapper">
+            <p class="basement-text">присоединяйтесь</p>
+            <ul class="list social-networks basement__social-networks">
+              <li class="social-networks__item social-networks__item--margin">
+                <a
+                  href="#"
+                  class="link social-networks__link basement__social-networks-link"
+                >
+                  <svg class="social-networks__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks__item social-networks__item--margin">
+                <a
+                  href="#"
+                  class="link social-networks__link basement__social-networks-link"
+                >
+                  <svg class="social-networks__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks__item social-networks__item--margin">
+                <a
+                  href="#"
+                  class="link social-networks__link basement__social-networks-link"
+                >
+                  <svg class="social-networks__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks__item social-networks__item--margin">
+                <a
+                  href="#"
+                  class="link social-networks__link basement__social-networks-link"
+                >
+                  <svg class="social-networks__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="basement-wrapper">
           <form class="form">
@@ -524,14 +528,16 @@
               class="form__input"
               placeholder="E-mail"
             />
-            <button type="submit" class="form__button button">
-              <span class="button__text"
-                >Подписаться
-                <svg class="button__icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-send"></use>
-                </svg>
-              </span>
-            </button>
+            <div class="btn-wrap">
+              <button type="submit" class="form__button button">
+                <span class="button__text"
+                  >Подписаться
+                  <svg class="button__icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-send"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
           </form>
         </div>
       </div>
