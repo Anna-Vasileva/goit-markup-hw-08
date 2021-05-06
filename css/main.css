@@ -1235,8 +1235,24 @@ p {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .basement__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: left;
+  }
+}
+
+.basement-wrap {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .basement-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1246,22 +1262,40 @@ p {
   }
 }
 
-.basement-wrapper:not(:last-child) {
-  margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .basement-wrap {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .basement-wrapper:nth-child(1) {
+  .basement-wrap__basement-wrapper:nth-child(1) {
     margin-left: 76px;
+    margin-right: auto;
+  }
+  .basement-wrap__basement-wrapper:nth-child(2) {
+    margin-right: 89px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .basement-wrapper:nth-child(1) {
+  .basement-wrap__basement-wrapper:nth-child(1) {
+    margin-left: 0;
     margin-right: 70px;
   }
-  .basement-wrapper:nth-child(2) {
-    margin-right: auto;
+  .basement-wrap__basement-wrapper:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+.basement-wrapper--geometry {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .basement-wrapper--geometry {
+    margin-bottom: 0;
   }
 }
 
@@ -1329,7 +1363,7 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .form__input {
     margin-bottom: 0;
     margin-right: 12px;
@@ -1367,6 +1401,12 @@ p {
 
 .button__icon {
   margin-left: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-wrap {
+    display: inline;
+  }
 }
 
 .portfolio {
