@@ -1200,7 +1200,13 @@ p {
 
 .basement__adds-item:not(:last-child) {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .basement__adds-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .basement-adds__value {
@@ -1225,12 +1231,38 @@ p {
   color: #ffffff;
 }
 
-.basement-wrapper:nth-child(1) {
-  margin-right: 70px;
+.basement__container {
+  text-align: center;
 }
 
-.basement-wrapper:nth-child(2) {
-  margin-right: auto;
+@media screen and (min-width: 768px) {
+  .basement__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.basement-wrapper:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .basement-wrapper:nth-child(1) {
+    margin-left: 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .basement-wrapper:nth-child(1) {
+    margin-right: 70px;
+  }
+  .basement-wrapper:nth-child(2) {
+    margin-right: auto;
+  }
 }
 
 .basement-text {
@@ -1251,11 +1283,17 @@ p {
   margin-right: 10px;
 }
 
+.basement__social-networks {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .form__input {
+  margin-bottom: 20px;
   padding: 15px 16px;
-  margin-right: 12px;
   height: 50px;
-  width: 358px;
+  max-width: 450px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1285,17 +1323,46 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 480px) {
+  .form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form__input {
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
 .form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
 }
 
 .form__text {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .form__button {
   padding: 10px 29px;
   min-width: 200px;
+}
+
+.button__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button__icon {
