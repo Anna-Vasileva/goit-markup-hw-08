@@ -1521,6 +1521,16 @@ p {
   margin-right: 8px;
 }
 
+.filter__item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 0;
+  }
+}
+
 .filter__button {
   padding: 6px 22px;
   background-color: #f5f4fa;
