@@ -8,6 +8,14 @@
 .team-list__pic {
   display: block;
   max-width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 260px;
+  }
 }
 .team-list {
   @media screen and (min-width: 768px) {
