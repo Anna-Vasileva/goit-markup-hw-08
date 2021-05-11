@@ -405,6 +405,7 @@ p {
 
 .adds-networks__separator {
   margin: 0 10px;
+  color: rgba(33, 33, 33, 0.2);
 }
 
 .logo__accent {
