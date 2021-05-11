@@ -102,11 +102,8 @@ p {
 
 .navigation__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.navigation__link {
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #212121;
   font-weight: 500;
   line-height: 1.18;
@@ -115,6 +112,13 @@ p {
 
 .navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__link:hover, .navigation__link:focus {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -243,12 +247,12 @@ p {
 }
 
 .navigation {
-  margin-bottom: 270px;
+  margin-top: 32px;
 }
 
 @media screen and (min-width: 768px) {
   .navigation {
-    margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -319,6 +323,12 @@ p {
   }
 }
 
+.menu-button.is-open {
+  position: fixed;
+  top: 0;
+  right: 15px;
+}
+
 .menu-button__cross {
   display: none;
 }
@@ -334,18 +344,29 @@ p {
 @media screen and (max-width: 768px) {
   .menu-container {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #ffffff;
     padding-left: 40px;
-    top: 16px;
+    top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
     z-index: 1;
     text-align: left;
     font-size: 40px;
   }
   .menu-container.is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow-y: scroll;
   }
 }
 
@@ -363,6 +384,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 48px;
   font-weight: 500;
   font-size: 18px;
@@ -376,12 +399,12 @@ p {
   }
 }
 
-.adds-networks__item:not(:last-child) {
-  margin-right: 20px;
-}
-
 .adds-networks__link {
   color: #2196f3;
+}
+
+.adds-networks__separator {
+  margin: 0 10px;
 }
 
 .logo__accent {
@@ -1622,6 +1645,12 @@ p {
   border-bottom-color: #ececec;
   border-left-color: #ececec;
   border-right-color: #ececec;
+}
+
+@media screen and (max-width: 1199px) {
+  .portfolio-title {
+    padding-right: 0;
+  }
 }
 
 .portfolio-list__img {

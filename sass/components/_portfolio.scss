@@ -103,6 +103,9 @@
   border-bottom-color: $border-color;
   border-left-color: $border-color;
   border-right-color: $border-color;
+  @media screen and (max-width: 1199px) {
+    padding-right: 0;
+  }
 }
 
 .portfolio-list__img {
